@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>纯css3实现的页面平滑过渡</title>
+		<!--告诉ie低版本使用最新的渲染模式，防止低版本不支持css3属性-->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrom=1">
+		<!--页面宽度适配所有的移动设备宽，而且不允许用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--新字体的链接-->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" type="text/css"/>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="st-container">
+				<!--导航区开始-->
+				<input type="radio" name="radio-set" checked="checked" id="set-control-1"/>
+				<a href="#st-panel-1">Serendipity</a>
+				<input type="radio" name="radio-set" id="set-control-2"/>
+				<a href="#st-panel-2">Happiness</a>
+				<input type="radio" name="radio-set" id="set-control-3"/>
+				<a href="#st-panel-3">Tranquillity</a>
+				<input type="radio" name="radio-set" id="set-control-4"/>
+				<a href="#st-panel-4">Positivity</a>
+				<input type="radio" name="radio-set" id="set-control-5"/>
+				<a href="#st-panel-5">Passion</a>
+				<!--导航区结束-->
+				<!--内容区开始-->
+				<section class="st-scroll">
+					<!--意外的惊喜-->
+					<div class="st-panel" id="st-panel-1">
+						<div class="st-desc" data-ico="H"></div>
+						<h2>
+							<a href="#">Serendipity</a>
+						</h2>
+						<div class="st-pic">The real winners in life are the people who look at every situation with an expectation that they can make it work or make it better.</div>
+						<div id="menu">
+							<input type="checkbox" id="open"/>
+							<label for="open">点这里有惊喜</label>
+							<ul>
+								<li><a href="#">
+									<img src="img/1.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/2.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/3.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/4.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/5.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/6.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/7.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/8.jpg" />
+								</a></li>
+								<li><a href="#">
+									<img src="img/9.jpg" />
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--幸福-->
+					<div class="st-panel" id="st-panel-2">
+						<div class="st-desc" data-ico="2"></div>
+						<h2>
+							<a href="#">Happiness</a>
+						</h2>
+						<div class="st-pic">To see a world in a grain of sand, And a heaven in a wild fllower, Hold infinity in the palm of your hand, And eternity in an hour.</div>
+						<div class="cat">
+							<div class="head">
+							    <span class="nose"></span>
+							    <div class="ears"></div>
+							    <div class="stripes stripes-right"></div>
+							    <div class="stripes stripes-left"></div>
+							    <div class="tongue"></div>
+							</div>
+						    <div class="body">
+						    	<span class="stripes"></span>
+						    </div>
+						    <div class="tail"></div>
+						</div>
+						<div class="butterfly">
+							<div class="butterfly-antennas"></div>
+							<div class="b-body"></div>
+							<div class="butterfly-right-wing"></div>
+							<div class="butterfly-left-wing"></div>
+						</div>
+						<div class="wrap">
+					        <div class="cube">
+					            <div class="front"></div>
+					            <div class="back"></div>
+					            <div class="top"></div>
+					            <div class="bottom"></div>
+					            <div class="left"></div>
+					            <div class="right"></div>
+					            <i class="i_front"></i>
+					            <i class="i_back"></i>
+					            <i class="i_top"></i>
+					            <i class="i_bottom"></i>
+					            <i class="i_left"></i>
+					            <i class="i_right"></i>
+					        </div>
+					    </div>
+						
+					</div>
+					
+					<!--宁静-->
+					<div class="st-panel" id="st-panel-3">
+						<div class="st-desc" data-ico="l"></div>
+						<h2>
+							<a href="#">Tranquillity</a>
+						</h2>
+						<div class="star-bg">
+							<div class="stars"></div>
+						    <div class="twinkling"></div>
+						    <div class="clouds"></div>
+						</div>
+						<div class="sphere">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<div class="st-pic">One should give up anger; one should abandon pride; one should overcome all fetters. I’ll never befall him who clings not to mind and body and is passionless.</div>
+					</div>
+					<!--积极性-->
+					<div class="st-panel" id="st-panel-4">
+						<div class="st-desc" data-ico="x"></div>
+						<h2>
+							<a href="#">Positivity</a>
+						</h2>
+						<div class="st-pic">The dream was always running ahead of me. To catch up, to live for a moment in unison with it, that was the miracle.</div>
+						<div id="container">
+						    <div class="fish f1">
+						        <div class="bell"></div>
+						        <div class="tentacle one"></div>
+						        <div class="tentacle two"></div>
+						        <div class="tentacle three"></div>
+						        <div class="tentacle four"></div>
+						    </div>
+						    <div class="fish f2">
+						        <div class="bell"></div>
+						        <div class="tentacle one"></div>
+						        <div class="tentacle two"></div>
+						        <div class="tentacle three"></div>
+						        <div class="tentacle four"></div>
+						    </div>
+						    <div class="fish f3">
+						        <div class="bell"></div>
+						        <div class="tentacle one"></div>
+						        <div class="tentacle two"></div>
+						        <div class="tentacle three"></div>
+						        <div class="tentacle four"></div>
+						    </div>
+						  </div>
+						  <div class="sea">
+						    <div class="circle-wrapper">
+						        <div class="bubble"></div>
+						        <div class="submarine-wrapper">
+						            <div class="submarine-body">
+						                <div class="window"></div>
+						                <div class="engine"></div>
+						                <div class="light"></div>
+						            </div>
+						            <div class="helix"></div>
+						            <div class="hat">
+						              <div class="leds-wrapper">
+						                  <div class="periscope"></div>
+						                  <div class="leds"></div>
+						              </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="albums-tab">
+							<div class="albums-tab-thumb sim-anim-4">
+								<img src="img/pos_pic1.jpg"/>
+								<img src="img/pos_pic2.jpg"/>
+								<img src="img/pos_pic3.jpg"/>
+								<img src="img/pos_pic4.jpg"/>
+								<img src="img/pos_pic5.jpg"/>
+								<img src="img/pos_pic6.jpg"/>
+								<img src="img/pos_pic7.jpg"/>
+								<img src="img/pos_pic8.jpg"/>
+								<img src="img/pos_pic9.jpg"/>
+							</div>
+						</div>
+						  
+					</div>
+					<!--激情-->
+					<div class="st-panel" id="st-panel-5">
+						<div class="st-desc" data-ico="C"></div>
+						<h2>
+							<a href="#">Passion</a>
+						</h2>
+						<div class="st-pic">You make millions of decisions that mean nothing and then one day your order takes out and it changes your life.</div>
+						<div class='tri'>
+						    <div class='side'>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+						    </div>
+						    <div class='side'>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+						    </div>
+						    <div class='side'>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+							    <div class='ring'></div>
+						    </div>
+						</div>
+						<div class="dot_box">
+							<div class="dot"></div>
+							<div class="shadow"></div>
+						</div>
+						<div class="albums-tab">
+							<div class="albums-tab-thumb sim-anim-6">
+								<img src="img/pas_pic1.jpg"/>
+								<img src="img/pas_pic2.jpg"/>
+								<img src="img/pas_pic3.jpg"/>
+								<img src="img/pas_pic4.jpg"/>
+								<img src="img/pas_pic5.jpg"/>
+								<img src="img/pas_pic6.jpg"/>
+								<img src="img/pas_pic7.jpg"/>
+								<img src="img/pas_pic8.jpg"/>
+								<img src="img/pas_pic9.jpg"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--内容区结束-->
+			</div>
+		</div>
+	</body>
+</html>
